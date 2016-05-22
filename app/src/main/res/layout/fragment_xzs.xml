@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".XZSFragment"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xzs"
+
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="?android:attr/listDivider"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_margin="16dip">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/xzs_layout_qtnd"
+                >
+                <include layout="@layout/item_show_data"
+
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/xzs_layout_sd">
+
+                <include layout="@layout/item_show_data"
+
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:id="@+id/xzs_layout_wd"
+            >
+            <include layout="@layout/item_show_data"
+
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jc_address_tag"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jc_address_name"
+                android:textSize="25sp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s_e_time_text"
+                    android:text="@string/jc_time"
+
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time_ymd"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/time_ymd"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jc_time"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:hint="显示当前设备时间"/>
+        </LinearLayout>
+</LinearLayout>
+</FrameLayout>

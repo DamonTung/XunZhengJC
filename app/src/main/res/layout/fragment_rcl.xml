@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+              android:background="@drawable/background"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rcl"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/rcl_activity_tag"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="?android:attr/listDivider">
+
+        </View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/show_data_gqwd"
+            android:layout_weight="1"
+            android:paddingRight="20dp">
+            <include layout="@layout/item_show_temp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/show_data_sqwd"
+            android:layout_weight="1">
+            <include layout="@layout/item_show_temp" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingRight="12dip"
+            android:layout_margin="16dip">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcl_layout_hjwd"
+                android:layout_marginTop="8dp"
+                >
+                <include layout="@layout/item_show_data"
+
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/rcl_layout_xdsd"
+                android:layout_marginTop="8dp">
+
+                <include layout="@layout/item_show_data"
+
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rcl_layout_mxwd"
+            android:layout_marginTop="8dp"
+            >
+            <include layout="@layout/item_show_data"
+
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="32dp"
+        android:paddingLeft="32dp"
+        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="16dip"
+            android:id="@+id/time_start">
+            <include layout="@layout/item_set_time">
+
+            </include>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/time_end">
+            <include layout="@layout/item_set_time">
+
+            </include>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
